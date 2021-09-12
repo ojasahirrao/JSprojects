@@ -24,7 +24,7 @@ h1 {
 .input {
     font-size: 25px;
     padding: 0.5rem;
-    border: 0;
+    border: none;
     border-radius: 10px;
 }
 
@@ -43,4 +43,27 @@ h1 {
 .options {
     width: 100%;
     max-width: 400px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options #btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0.5px solid black;
+}
+
+#generate {
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: ghostwhite;
+    color: #444;
 }
