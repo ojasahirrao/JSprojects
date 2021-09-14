@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <h1>Password Generator</h1>
+
+    <div class="container">
+        <div class="password-container">
+            <span id="result"></span>
+
+            <button class="btn" id="copy"><i class="fas fa-clipboard"></i></button>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <label>Select Password length</label>
+                <input type="number" min="5" max="30" value="30">
+            </div>
+
+            <div class="option">
+                <label>Include capital letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="option">
+                <label>Include small letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="option">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+            <div class="option">
+                <label>Include special characters</label>
+                <input type="checkbox" id="characters" checked>
+            </div>
+        </div>
+
+        <button class="btn" id="generate">Generate</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
