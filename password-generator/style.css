@@ -42,6 +42,7 @@ h1 {
 }
 
 .password-container #result {
+    color: #fff;
     word-wrap: break-word;
     height: 100%;
 }
