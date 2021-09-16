@@ -12,7 +12,7 @@ const lowercaseEl = document.getElementById('lowercase')
 const uppercaseEl = document.getElementById('uppercase')
 const numbersEl = document.getElementById('numbers')
 const charactersEl = document.getElementById('characters')
-const copyBtn = document.getElementById('copy')
+const copyBtn = document.getElementById('copyelement')
 const generateBtn = document.getElementById('generate')
 
 const passwordKeys = {
@@ -51,6 +51,23 @@ function createPassword(length, lower, upper, number, character) {
 
     return finalPassword
 }
+
+copyBtn.addEventListener('click', () => {
+    const textarea = document.createElement('textarea')
+    const password = resultEl.innerText
+
+    if (!password) {
+        return
+    }
+
+    textarea.value = password
+    document.body.appendChild(textarea)
+    textarea.select()
+    document.execCommand('copy')
+    textarea.remove()
+    alert('The clipboard now contains the password')
+})
+
 
 function getUppercase() {
     return uppercase[Math.floor(Math.random() * 26)]
