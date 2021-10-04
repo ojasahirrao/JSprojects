@@ -16,8 +16,9 @@ body {
 
 .clock-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .clock {
@@ -67,13 +68,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.time {
+    font-size: 60px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .date {
     font-size: 20px;
     color: #000;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease-in;
-}
-
-.time {
-    font-size: 45px;
+    margin-top: 50px;
 }
